@@ -1,5 +1,6 @@
 .container{
-    width: 640px;
+    width: 90%;
+    max-width: 640px;
     background-color: white;
     color: #262626;
     display: flex;
@@ -7,6 +8,7 @@
     gap: 20px;
     border-radius: 10px;
     padding: 40px 50px;
+    margin: auto;
 }
 
 .container hr{
@@ -14,7 +16,6 @@
     border: none;
     background:#707070 ;
 }
-
 
 .container h2{
     font-size: 27px;
@@ -38,7 +39,7 @@
     margin: auto;
     width: 250px;
     height: 65px;
-    background-color: #553f9a;
+    background-color: #c088f5;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
@@ -51,13 +52,62 @@
     font-size: 18px;
 }
 
-
 .container .correct{
- background: #dffff2;
- border-color: #00d397;   
+    background: #dffff2;
+    border-color: #00d397;
 }
 
 .container .wrong{
     background: #FFEBEB;
-    border-color: #FF4AAA;   
-   }
+    border-color: #FF4AAA;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 40px;
+    }
+    
+    .container h2 {
+        font-size: 24px;
+    }
+    
+    .container ul li {
+        font-size: 18px;
+        height: 60px;
+    }
+    
+    .container button {
+        width: 200px;
+        height: 55px;
+        font-size: 22px;
+    }
+    
+    .container .index {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 30px;
+    }
+    
+    .container h2 {
+        font-size: 22px;
+    }
+    
+    .container ul li {
+        font-size: 16px;
+        height: 50px;
+    }
+    
+    .container button {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .container .index {
+        font-size: 14px;
+    }
+}
